@@ -1,0 +1,54 @@
+
+
+/* Estilo para a secção do cronograma */
+.cronograma {
+    width: 90%;
+    max-width: 800px;
+    margin: 60px auto;
+    text-align: left;
+}
+
+.cronograma h2 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.timeline-time {
+    font-weight: bold;
+    font-size: 18px;
+    width: 80px;
+    text-align: right;
+    color: #2d3e50;
+}
+
+.timeline-content {
+    flex: 1;
+    padding-left: 15px;
+    border-left: 2px solid #8A9C85; /* Cor verde clara da paleta */
+}
+
+.timeline-content h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #2d3e50;
+}
+
+.timeline-content p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #5a5a5a;
+}
+
