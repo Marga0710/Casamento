@@ -247,3 +247,58 @@ footer {
     font-size: 14px;
     color: #5a5a5a;
 }
+
+/* Ajustes para telemóveis e ecrãs pequenos */
+@media (max-width: 768px) {
+    /* Ajustar o cabeçalho para telemóveis */
+    header {
+        flex-direction: column;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left-header, .right-header {
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    /* Empilhar cards na versão mobile */
+    .evento-container {
+        flex-direction: column;
+    }
+
+    .evento-card {
+        width: 100%; /* Ocupar toda a largura */
+        margin-bottom: 20px;
+    }
+
+    /* Ajustar o cronograma */
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .timeline-time {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
+    .timeline-content {
+        border-left: none;
+        border-top: 2px solid #8A9C85;
+        padding-top: 10px;
+        height: auto; /* Permitir altura dinâmica */
+    }
+
+    /* Ajustar botões */
+    .evento-btn {
+        width: 100%; /* Largura total para não ficar pequeno no telemóvel */
+    }
+}
