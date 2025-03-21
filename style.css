@@ -15,16 +15,10 @@ header {
     padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Distribui os elementos */
-}
-
-.header-container {
-    display: flex;
+    justify-content: space-between;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .left-header {
@@ -71,6 +65,8 @@ p#countdown {
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
+    border: 2px solid #6f8263;
+    transition: 0.3s;
 }
 
 .rsvp-btn:hover {
