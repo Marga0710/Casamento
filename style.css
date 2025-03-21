@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@300&display=swap');
 
 body {
     font-family: 'Josefin Sans', sans-serif;
@@ -23,12 +23,12 @@ header {
 }
 
 h1 {
-    font-family: 'Parisienne', cursive; /* Alternativa mais refinada para Savoye LET */
+    font-family: 'Great Vibes', cursive; /* Alternativa mais fluida para Savoye LET */
     font-size: 48px;
 }
 
 h2 {
-    font-family: 'Parisienne', cursive; /* Alternativa mais refinada para Savoye LET */
+    font-family: 'Great Vibes', cursive; /* Alternativa mais fluida para Savoye LET */
     font-size: 32px;
 }
 
