@@ -6,14 +6,17 @@ body {
     margin: 0;
     padding: 0;
 }
+
 header {
     background-color: #6f8263;
     color: white;
     padding: 20px;
 }
+
 h1, h2 {
     font-family: 'Cursive', serif;
 }
+
 section {
     margin: 20px auto;
     padding: 20px;
@@ -22,9 +25,11 @@ section {
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .lista-casamento {
     background-color: #dfe9db;
 }
+
 .rsvp button {
     background-color: #6f8263;
     color: white;
@@ -33,13 +38,16 @@ section {
     border-radius: 8px;
     cursor: pointer;
 }
+
 .rsvp button:disabled {
     background-color: grey;
     cursor: not-allowed;
 }
+
 footer {
     margin-top: 20px;
     padding: 10px;
     background-color: #2d3e50;
     color: white;
 }
+
