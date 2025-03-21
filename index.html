@@ -3,54 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Margarida & Bruno - Casamento</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Casamento Margarida & Bruno</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function countdown() {
+            const weddingDate = new Date("August 29, 2025 00:00:00").getTime();
+            setInterval(() => {
+                const now = new Date().getTime();
+                const distance = weddingDate - now;
+                
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById("countdown").innerHTML = 
+                    days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+            }, 1000);
+        }
+        window.onload = countdown;
+    </script>
 </head>
 <body>
-
     <header>
-        <img src="Mosteiro (branco).png" alt="Mosteiro de Grijó" class="mosteiro-img">
         <h1>Margarida & Bruno</h1>
-        <p>29 Agosto 2025</p>
+        <p id="countdown"></p>
+        <a href="#rsvp" class="rsvp-btn">Confirmar Presença</a>
     </header>
 
-    <section class="localizacao">
-        <h2><i class="fas fa-map-marker-alt"></i> Localização</h2>
-        <p><strong>Cerimónia:</strong> Mosteiro de Grijó</p>
-        <p><strong>Copo de Água:</strong> The Astoria, Vila Nova de Gaia</p>
+    <section id="localizacao">
+        <h2>Localização</h2>
+        <p><strong>Cerimónia:</strong> <a href="https://goo.gl/maps/MosteiroGrijo" target="_blank">Mosteiro de Grijó</a></p>
+        <p><strong>Copo de Água:</strong> <a href="https://goo.gl/maps/TheAstoria" target="_blank">The Astoria, Vila Nova de Gaia</a></p>
     </section>
 
-    <section class="detalhes">
-        <h2><i class="fas fa-clock"></i> Detalhes do Evento</h2>
+    <section id="detalhes">
+        <h2>Detalhes</h2>
         <p><strong>Cerimónia:</strong> 14h30</p>
-        <p><strong>Copo de Água:</strong> 16h00</p>
-        <p><strong>Jantar:</strong> 20h00</p>
+        <p><strong>Copo de Água:</strong> 16h</p>
+        <p><strong>Jantar:</strong> 20h</p>
     </section>
 
-    <section class="lista-casamento">
-        <h2><i class="fas fa-gift"></i> Lista de Casamento</h2>
-        <p> O mais importante é contarmos contigo neste dia, mas caso queiras contribuir para o crescimento da nossa família, deixamos os nossos dados! Obrigada! </p>
-        <p><i class="fas fa-mobile-alt"></i> <strong>MB WAY:</strong> 917372853</p>
-        <p><i class="fas fa-credit-card"></i> <strong>Revolut:</strong> 933430554</p>
-        <p><i class="fas fa-university"></i> <strong>IBAN:</strong> (a fornecer mais tarde)</p>
+    <section id="lista-casamento">
+        <h2>Lista de Casamento</h2>
+        <p>O mais importante é contarmos contigo neste dia, mas caso queiras contribuir para o crescimento da nossa família, deixamos os nossos dados!</p>
+        <p><strong>MbWay:</strong> 917372853</p>
+        <p><strong>Revolut:</strong> 933430554</p>
     </section>
 
-    <section class="rsvp">
-        <h2><i class="fas fa-envelope"></i> Confirmação de Presença</h2>
-        <p>Brevemente adicionaremos o link para confirmação.</p>
-        <button disabled>Pendente</button>
-    </section>
-
-    <section class="contactos">
-        <h2><i class="fas fa-phone"></i> Contactos</h2>
-        <p><i class="fas fa-user"></i> <strong>Margarida:</strong> 917372853</p>
-        <p><i class="fas fa-user"></i> <strong>Bruno:</strong> 933430553</p>
+    <section id="rsvp">
+        <h2>Confirmação de Presença</h2>
+        <a href="URL_DO_FORMULARIO" class="rsvp-link">Confirmar Presença</a>
     </section>
 
     <footer>
-        <p>&copy; 2025 Margarida & Bruno</p>
+        <p>Contacto: Margarida - 917372853 | Bruno - 933430553</p>
     </footer>
-
 </body>
 </html>
