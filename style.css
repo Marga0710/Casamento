@@ -211,7 +211,7 @@ footer {
 .timeline {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 25px; /* Aumenta espaçamento entre os horários */
 }
 
 .timeline-item {
@@ -223,14 +223,14 @@ footer {
 .timeline-time {
     font-weight: bold;
     font-size: 18px;
-    width: 80px;
+    width: 100px; /* Ajustado para mais espaçamento */
     text-align: right;
     color: #2d3e50;
 }
 
 .timeline-content {
     flex: 1;
-    padding-left: 15px;
+    padding-left: 25px; /* Aumentado para dar mais espaço da barra para o texto */
     border-left: 2px solid #8A9C85; /* Cor verde clara da paleta */
 }
 
@@ -242,6 +242,4 @@ footer {
 
 .timeline-content p {
     margin: 5px 0 0;
-    font-size: 14px;
-    color: #5a5a5a;
-}
+ 
