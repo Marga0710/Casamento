@@ -1,0 +1,30 @@
+body {
+    font-family: 'Georgia', serif;
+    text-align: center;
+    background-color: #f5f5f2;
+    color: #2d3e50;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #6f8263;
+    color: white;
+    padding: 20px;
+}
+h1, h2 {
+    font-family: 'Cursive', serif;
+}
+.rsvp button {
+    background-color: #6f8263;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #2d3e50;
+    color: white;
+}
