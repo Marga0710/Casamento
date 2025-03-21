@@ -180,3 +180,12 @@ footer {
 .evento-btn:hover {
     background-color: #7D8E77; /* Suave transição no hover */
 }
+
+
+/* Reduzir o comprimento do botão "Ver Direções" */
+.evento-btn {
+    width: auto; /* Ajustar ao conteúdo */
+    min-width: 120px; /* Definir um tamanho mínimo */
+    max-width: 160px; /* Limitar o comprimento para não ficar grande demais */
+    text-align: center; /* Garantir alinhamento do texto */
+}
