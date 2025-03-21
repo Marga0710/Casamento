@@ -11,6 +11,13 @@ header {
     background-color: #6f8263;
     color: white;
     padding: 20px;
+    text-align: center;
+}
+
+.mosteiro-img {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto 10px auto;
 }
 
 h1, h2 {
@@ -50,4 +57,3 @@ footer {
     background-color: #2d3e50;
     color: white;
 }
-
