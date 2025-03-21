@@ -3,92 +3,34 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
-    background-color: #f5f5f2;
+    background-color: #f5f5f2; /* Fundo uniforme */
     color: #2d3e50;
     margin: 0;
     padding: 0;
 }
 
-header {
+header, footer {
     background-color: #6f8263;
     color: white;
     padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.header-container {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.left-header {
-    flex: 1;
-    text-align: left;
-    font-size: 18px;
-}
-
-.center-header {
-    flex: 2;
-    text-align: center;
-}
-
-.right-header {
-    flex: 1;
-    text-align: right;
-}
-
-.mosteiro-img {
-    max-width: 100px;
-    display: block;
-    margin: 0 auto 5px auto;
 }
 
 h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 42px;
-    margin: 0;
 }
 
-p#countdown {
-    font-size: 16px;
-    font-weight: bold;
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 5px 10px;
-    border-radius: 8px;
-    display: inline-block;
-}
-
-.rsvp-btn {
-    background-color: white;
-    color: #6f8263;
-    padding: 8px 12px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    border: 2px solid #6f8263;
-    transition: 0.3s;
-    display: inline-block;
-}
-
-.rsvp-btn:hover {
-    background-color: #f0f0f0;
-}
-
-#detalhes-evento {
-    margin: 40px auto;
+section {
+    width: 80%;
+    max-width: 800px;
+    margin: 60px auto; /* Mais espaçamento entre secções */
     padding: 20px;
-    width: 90%;
-    max-width: 1200px;
+}
+
+/* Separação sutil entre secções */
+section:not(:last-child) {
+    border-bottom: 1px solid #c4c4c4;
+    padding-bottom: 40px;
 }
 
 .evento-container {
@@ -102,72 +44,13 @@ p#countdown {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 45%;
     text-align: center;
-}
-
-.evento-card h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.evento-btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 12px;
-    border-radius: 8px;
-    background-color: #6f8263;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.evento-btn:hover {
-    background-color: #5a7052;
-}
-
-/* Restaurando separação entre secções */
-section {
-    margin: 40px auto;
-    padding: 20px;
-    width: 90%;
-    max-width: 800px;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.lista-casamento {
-    background-color: #dfe9db;
-}
-
-/* Estilizando os ícones sem emojis */
-.icon {
-    width: 16px;
-    height: 16px;
-    vertical-align: middle;
-    margin-right: 5px;
 }
 
 footer {
     margin-top: 20px;
     padding: 10px;
-    background-color: #2d3e50;
-    color: white;
-}
-
-
-/* Aplicar fundo alternado para separar secções */
-section {
-    width: 80%;
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-}
-
-section:nth-child(odd) {
-    background: #f7f7f7;
-    padding: 30px;
-    border-radius: 10px;
+    text-align: center;
 }
