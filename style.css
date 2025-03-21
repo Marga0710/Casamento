@@ -223,15 +223,17 @@ footer {
 .timeline-time {
     font-weight: bold;
     font-size: 18px;
-    width: 100px; /* Ajustado para mais espaçamento */
+    width: 80px; /* Garante alinhamento */
     text-align: right;
     color: #2d3e50;
+    margin-right: 15px; /* Adicionado para afastar a barra */
 }
 
 .timeline-content {
     flex: 1;
-    padding-left: 25px; /* Aumentado para dar mais espaço da barra para o texto */
+    padding-left: 20px; /* Espaçamento uniforme */
     border-left: 2px solid #8A9C85; /* Cor verde clara da paleta */
+    height: 40px; /* Mantém o mesmo tamanho para todas as barras */
 }
 
 .timeline-content h3 {
@@ -242,4 +244,6 @@ footer {
 
 .timeline-content p {
     margin: 5px 0 0;
- 
+    font-size: 14px;
+    color: #5a5a5a;
+}
