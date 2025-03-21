@@ -18,7 +18,7 @@
                 const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
                 document.getElementById("countdown").innerHTML = 
-                    days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+                    days + " dias " + hours + "h " + minutes + "m " + seconds + "s";
             }, 1000);
         }
         window.onload = countdown;
@@ -26,9 +26,18 @@
 </head>
 <body>
     <header>
-        <h1>Margarida & Bruno</h1>
-        <p id="countdown"></p>
-        <a href="#rsvp" class="rsvp-btn">Confirmar Presença</a>
+        <div class="header-content">
+            <div class="countdown-container">
+                <p id="countdown"></p>
+            </div>
+            <div class="title-container">
+                <img src="mosteiro_branco.png" alt="Mosteiro de Grijó" class="mosteiro-img">
+                <h1>Margarida & Bruno</h1>
+            </div>
+            <div class="rsvp-container">
+                <a href="#rsvp" class="rsvp-btn">Confirmar Presença</a>
+            </div>
+        </div>
     </header>
 
     <section id="localizacao">
