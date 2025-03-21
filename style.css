@@ -13,34 +13,75 @@ header {
     background-color: #6f8263;
     color: white;
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribui os elementos */
+}
+
+.header-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-header {
+    flex: 1;
+    text-align: left;
+    font-size: 18px;
+}
+
+.center-header {
+    flex: 2;
     text-align: center;
 }
 
+.right-header {
+    flex: 1;
+    text-align: right;
+}
+
 .mosteiro-img {
-    max-width: 150px;
+    max-width: 120px;
     display: block;
-    margin: 0 auto 10px auto;
+    margin: 0 auto 5px auto;
 }
 
 h1 {
-    font-family: 'Dancing Script', cursive; /* Alternativa mais equilibrada para Savoye LET */
-    font-size: 48px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 42px;
+    margin: 0;
 }
 
-h2 {
-    font-family: 'Dancing Script', cursive; /* Alternativa mais equilibrada para Savoye LET */
-    font-size: 32px;
+p#countdown {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 8px;
+    display: inline-block;
 }
 
-p {
-    font-family: 'Josefin Sans', sans-serif; /* Alternativa fiel à Josefin Sans Light */
+.rsvp-btn {
+    background-color: white;
+    color: #6f8263;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.rsvp-btn:hover {
+    background-color: #f0f0f0;
 }
 
 section {
     margin: 20px auto;
     padding: 20px;
-    width: 90%;  /* Aumentar largura das secções */
-    max-width: 1200px; /* Manter limite máximo */
+    width: 90%;
+    max-width: 1200px;
     border-radius: 10px;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
