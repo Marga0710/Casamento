@@ -9,27 +9,99 @@ body {
     padding: 0;
 }
 
-header, footer {
+header {
     background-color: #6f8263;
     color: white;
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.left-header {
+    flex: 1;
+    text-align: left;
+    font-size: 18px;
+}
+
+.center-header {
+    flex: 2;
+    text-align: center;
+}
+
+.right-header {
+    flex: 1;
+    text-align: right;
+}
+
+.mosteiro-img {
+    max-width: 100px;
+    display: block;
+    margin: 0 auto 5px auto;
 }
 
 h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 42px;
+    margin: 0;
 }
 
+p#countdown {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.rsvp-btn {
+    background-color: white;
+    color: #6f8263;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #6f8263;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.rsvp-btn:hover {
+    background-color: #f0f0f0;
+}
+
+#detalhes-evento {
+    margin: 40px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Ajuste para melhorar fluidez das secções */
 section {
-    width: 80%;
-    max-width: 800px;
-    margin: 60px auto; /* Mais espaçamento entre secções */
+    width: 90%;
+    max-width: 900px;
+    margin: 60px auto;
     padding: 20px;
 }
 
-/* Separação sutil entre secções */
+/* Adicionar apenas uma linha sutil entre secções */
 section:not(:last-child) {
-    border-bottom: 1px solid #c4c4c4;
+    border-bottom: 1px solid #d1d1d1;
     padding-bottom: 40px;
 }
 
@@ -52,5 +124,7 @@ section:not(:last-child) {
 footer {
     margin-top: 20px;
     padding: 10px;
+    background-color: #2d3e50;
+    color: white;
     text-align: center;
 }
