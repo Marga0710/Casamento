@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt">
 <head>
@@ -5,81 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casamento Margarida & Bruno</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        function countdown() {
-            const weddingDate = new Date("August 29, 2025 14:30:00").getTime();
-            setInterval(() => {
-                const now = new Date().getTime();
-                const distance = weddingDate - now;
-                
-                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                document.getElementById("countdown").innerHTML = 
-                    days + " dias " + hours + "h " + minutes + "m " + seconds + "s";
-            }, 1000);
-        }
-        window.onload = countdown;
-    </script>
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <div class="left-header">
-                <p id="countdown"></p>
-            </div>
-            <div class="center-header">
-                <img src="Mosteiro (branco).png" alt="Mosteiro de Grijó" class="mosteiro-img">
-                <h1>Margarida & Bruno</h1>
-            </div>
-            <div class="right-header">
-                <a href="#rsvp" class="rsvp-btn">Confirmar Presença</a>
-            </div>
+
+<header>
+    <div class="header-container">
+        <div class="left-header">
+            <p id="countdown">160 dias 14h 49m 45s</p>
         </div>
-    </header>
+        <div class="center-header">
+            <img src="mosteiro_branco.png" alt="Mosteiro" class="mosteiro-img">
+            <h1>Margarida & Bruno</h1>
+        </div>
+        <div class="right-header">
+            <a href="#" class="rsvp-btn">Confirmar Presença</a>
+        </div>
+    </div>
+</header>
+
+<main>
 
     <section id="detalhes-evento">
         <h2>Detalhes do Evento</h2>
         <div class="evento-container">
             <div class="evento-card">
                 <h3>Cerimónia</h3>
-                <p>🕒 14h30</p>
+                <p>⏰ 14h30</p>
                 <p>📍 Mosteiro de Grijó</p>
                 <p>A cerimónia começará pontualmente. Por favor, chegue com antecedência.</p>
-                <a href="https://goo.gl/maps/MosteiroGrijo" target="_blank" class="evento-btn">➤ Ver Direções</a>
+                <a href="#" class="evento-btn">➤ Ver Direções</a>
             </div>
             <div class="evento-card">
                 <h3>Copo d'Água</h3>
-                <p>🕒 16h00</p>
+                <p>⏰ 16h00</p>
                 <p>📍 The Astoria, Vila Nova de Gaia</p>
-                <p>Estacionamento disponível no local.</p>
-                <a href="https://goo.gl/maps/TheAstoria" target="_blank" class="evento-btn">➤ Ver Direções</a>
+                <p>Estacionamento disponível no local. Serviço de manobrista gratuito.</p>
+                <a href="#" class="evento-btn">➤ Ver Direções</a>
             </div>
         </div>
     </section>
 
-    <section id="lista-casamento">
+    <!-- Secção Cronograma do Dia -->
+    <section class="cronograma">
+        <h2>Cronograma do Dia</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-time">14:30</div>
+                <div class="timeline-content">
+                    <h3>Início da Cerimónia Religiosa</h3>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-time">16:30</div>
+                <div class="timeline-content">
+                    <h3>Cocktail de Boas-Vindas</h3>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-time">19:30</div>
+                <div class="timeline-content">
+                    <h3>Jantar</h3>
+                    <p>Refeição com 3 pratos e vinhos selecionados</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-time">22:00</div>
+                <div class="timeline-content">
+                    <h3>Festa</h3>
+                    <p>Corte do bolo, música e dança</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lista-casamento">
         <h2>Lista de Casamento</h2>
         <p>O mais importante é contarmos contigo neste dia, mas caso queiras contribuir para o crescimento da nossa família, deixamos os nossos dados!</p>
         <p><strong>MbWay:</strong> 917372853</p>
         <p><strong>Revolut:</strong> 933430554</p>
     </section>
 
-    <section id="rsvp">
+    <section class="rsvp">
         <h2>Confirmação de Presença</h2>
-        <a href="URL_DO_FORMULARIO" class="rsvp-link">Confirmar Presença</a>
+        <a href="#" class="rsvp-btn">Confirmar Presença</a>
     </section>
 
-    <section id="contactos">
+    <section class="contactos">
         <h2>Contactos</h2>
         <p><strong>Margarida:</strong> 917372853</p>
         <p><strong>Bruno:</strong> 933430553</p>
+        <p>Contacto: Margarida - 917372853 | Bruno - 933430553</p>
     </section>
 
-    <footer>
-        <p>Contacto: Margarida - 917372853 | Bruno - 933430553</p>
-    </footer>
+</main>
+
+<footer>
+    <p>&copy; 2025 Margarida & Bruno</p>
+</footer>
+
 </body>
 </html>
