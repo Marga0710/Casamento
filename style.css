@@ -156,3 +156,15 @@ footer {
     background-color: #2d3e50;
     color: white;
 }
+
+
+/* Aplicar o estilo de cards para todas as secções */
+section {
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
