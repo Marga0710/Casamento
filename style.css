@@ -15,9 +15,12 @@ header {
 }
 
 .mosteiro-img {
-    max-width: 200px;
+    max-width: 150px;  /* Reduz o tamanho */
     display: block;
-    margin: 0 auto 10px auto;
+    margin: 0 auto 10px auto; /* Centraliza */
+    filter: brightness(0) invert(1); /* Garante que as linhas aparecem bem */
+}
+
 }
 
 h1, h2 {
