@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@300&display=swap');
 
 body {
     font-family: 'Josefin Sans', sans-serif;
@@ -23,13 +23,17 @@ header {
 }
 
 h1 {
-    font-family: 'Satisfy', cursive; /* Alternativa à Savoye LET */
+    font-family: 'Great Vibes', cursive; /* Alternativa mais próxima de Savoye LET */
     font-size: 48px;
 }
 
 h2 {
-    font-family: 'Satisfy', cursive; /* Alternativa à Savoye LET */
+    font-family: 'Great Vibes', cursive; /* Alternativa mais próxima de Savoye LET */
     font-size: 32px;
+}
+
+p {
+    font-family: 'Josefin Sans', sans-serif; /* Alternativa fiel à Josefin Sans Light */
 }
 
 section {
@@ -62,3 +66,7 @@ section {
 
 footer {
     margin-top: 20px;
+    padding: 10px;
+    background-color: #2d3e50;
+    color: white;
+}
