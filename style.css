@@ -128,3 +128,30 @@ footer {
     color: white;
     text-align: center;
 }
+
+
+/* Corrigir estilo dos botões "Ver Direções" */
+.evento-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: #6f8263; /* Verde correto */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Espaço entre o ícone e o texto */
+}
+
+.evento-btn img {
+    width: 16px; /* Ajustar tamanho do ícone */
+    height: 16px;
+}
+
+.evento-btn:hover {
+    background-color: #5a7052;
+}
