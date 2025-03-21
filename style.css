@@ -126,3 +126,33 @@ p#countdown {
 .evento-btn:hover {
     background-color: #5a7052;
 }
+
+/* Restaurando separação entre secções */
+section {
+    margin: 40px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lista-casamento {
+    background-color: #dfe9db;
+}
+
+/* Estilizando os ícones sem emojis */
+.icon {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #2d3e50;
+    color: white;
+}
