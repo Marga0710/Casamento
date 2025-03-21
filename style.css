@@ -158,13 +158,11 @@ footer {
 }
 
 
-/* Aplicar o estilo de cards para todas as secções */
+/* Aplicar linhas finas para separar as secções */
 section {
     width: 80%;
     max-width: 800px;
     margin: 40px auto;
     padding: 20px;
-    background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    border-bottom: 2px solid #6f8263;
 }
