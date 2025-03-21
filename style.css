@@ -155,3 +155,15 @@ footer {
 .evento-btn:hover {
     background-color: #5a7052;
 }
+
+
+/* Ajustar tamanho e cor do botão "Ver Direções" */
+.evento-btn {
+    padding: 6px 10px; /* Reduzir tamanho */
+    font-size: 14px; /* Ajustar tamanho da fonte */
+    background-color: #8A9C85; /* Verde mais claro da paleta */
+}
+
+.evento-btn:hover {
+    background-color: #7D8E77; /* Tom um pouco mais escuro no hover */
+}
