@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+@font-face {
+    font-family: 'SavoyeLET';
+    src: url('https://fonts.gstatic.com/s/satisfy/v10/rP2Hp2yn6lkG50LoCZOIHQ.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    font-family: 'Georgia', serif;
+    font-family: 'Josefin Sans', sans-serif;
     text-align: center;
     background-color: #f5f5f2;
     color: #2d3e50;
@@ -15,22 +24,26 @@ header {
 }
 
 .mosteiro-img {
-    max-width: 150px;  /* Reduz o tamanho */
+    max-width: 150px;
     display: block;
-    margin: 0 auto 10px auto; /* Centraliza */
-    filter: brightness(0) invert(1); /* Garante que as linhas aparecem bem */
+    margin: 0 auto 10px auto;
 }
 
+h1 {
+    font-family: 'SavoyeLET', cursive;
+    font-size: 48px;
 }
 
-h1, h2 {
-    font-family: 'Cursive', serif;
+h2 {
+    font-family: 'SavoyeLET', cursive;
+    font-size: 32px;
 }
 
 section {
     margin: 20px auto;
     padding: 20px;
-    max-width: 600px;
+    width: 90%;  /* Aumentar largura das secções */
+    max-width: 1200px; /* Manter limite máximo */
     border-radius: 10px;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
