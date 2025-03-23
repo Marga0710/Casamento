@@ -106,7 +106,7 @@
 
 <script>
     function atualizarContagem() {
-        // Definir a data do casamento (29 de agosto de 2024 às 14:30)
+        // Data do casamento: 29 de agosto de 2024 às 14:30
         const dataCasamento = new Date("2024-08-29T14:30:00").getTime();
 
         function atualizar() {
@@ -125,12 +125,13 @@
             }
         }
 
-        atualizar(); // Atualizar imediatamente ao carregar a página
-        setInterval(atualizar, 1000); // Atualizar a cada segundo
+        atualizar(); // Chama a função imediatamente ao carregar a página
+        setInterval(atualizar, 1000); // Atualiza a cada segundo
     }
 
     document.addEventListener("DOMContentLoaded", atualizarContagem);
 </script>
+
 
 </body>
 </html>
