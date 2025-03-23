@@ -105,11 +105,10 @@
 </footer>
 
 <script>
-    function atualizarContagem() {
-        // Data do casamento: 29 de agosto de 2024 às 14:30
-        const dataCasamento = new Date("2024-08-29T14:30:00").getTime();
-
-        function atualizar() {
+    document.addEventListener("DOMContentLoaded", function() {
+        function atualizarContagem() {
+            // Define a data do casamento (29 de agosto de 2024 às 14:30)
+            const dataCasamento = new Date("2024-08-29T14:30:00").getTime();
             const agora = new Date().getTime();
             const diferenca = dataCasamento - agora;
 
@@ -120,18 +119,16 @@
                 const segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
 
                 document.getElementById("countdown").innerHTML = `${dias} dias ${horas}h ${minutos}m ${segundos}s`;
-            } else {
+            } else if (diferenca <= 0) {
                 document.getElementById("countdown").innerHTML = "Hoje é o grande dia! 🎉";
             }
         }
 
-        atualizar(); // Chama a função imediatamente ao carregar a página
-        setInterval(atualizar, 1000); // Atualiza a cada segundo
-    }
-
-    document.addEventListener("DOMContentLoaded", atualizarContagem);
+        // Atualiza a cada segundo
+        setInterval(atualizarContagem, 1000);
+        atualizarContagem();
+    });
 </script>
-
 
 </body>
 </html>
