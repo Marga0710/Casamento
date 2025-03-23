@@ -106,13 +106,15 @@
 
 <script>
     function atualizarContagem() {
-        const dataCasamento = new Date("2024-08-31T14:30:00").getTime(); // Substituir pela data real
+        // Definir a data e hora do casamento (corrigir formato e timezone)
+        const dataCasamento = new Date("2024-08-29T14:30:00").getTime(); 
+
         function atualizar() {
             const agora = new Date().getTime();
             const diferenca = dataCasamento - agora;
 
             if (diferenca <= 0) {
-                document.getElementById("countdown").innerHTML = "Hoje é o grande dia! 🎉";
+                document.getElementById("countdown").innerHTML = "Falta pouco! 🎉";
                 return;
             }
 
@@ -124,12 +126,13 @@
             document.getElementById("countdown").innerHTML = `${dias} dias ${horas}h ${minutos}m ${segundos}s`;
         }
 
-        atualizar(); // Atualiza imediatamente ao carregar a página
-        setInterval(atualizar, 1000); // Atualiza a cada segundo
+        atualizar(); // Atualizar ao carregar a página
+        setInterval(atualizar, 1000); // Atualizar a cada segundo
     }
 
     document.addEventListener("DOMContentLoaded", atualizarContagem);
 </script>
+
 
 
 </body>
