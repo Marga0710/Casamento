@@ -12,7 +12,7 @@
 <header>
     <div class="header-container">
         <div class="left-header">
-            <p id="countdown">160 dias 14h 49m 45s</p>
+            <p id="countdown"></p>
         </div>
         <div class="center-header">
             <img src="Mosteiro (branco).png" alt="Mosteiro" class="mosteiro-img">
@@ -103,6 +103,34 @@
 <footer>
     <p>&copy; 2025 Margarida & Bruno</p>
 </footer>
+
+<script>
+    function atualizarContagem() {
+        const dataCasamento = new Date("2024-08-31T14:30:00").getTime(); // Substituir pela data real
+        function atualizar() {
+            const agora = new Date().getTime();
+            const diferenca = dataCasamento - agora;
+
+            if (diferenca <= 0) {
+                document.getElementById("countdown").innerHTML = "Hoje é o grande dia! 🎉";
+                return;
+            }
+
+            const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+            const horas = Math.floor((diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutos = Math.floor((diferenca % (1000 * 60 * 60)) / (1000 * 60));
+            const segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
+
+            document.getElementById("countdown").innerHTML = `${dias} dias ${horas}h ${minutos}m ${segundos}s`;
+        }
+
+        atualizar(); // Atualiza imediatamente ao carregar a página
+        setInterval(atualizar, 1000); // Atualiza a cada segundo
+    }
+
+    document.addEventListener("DOMContentLoaded", atualizarContagem);
+</script>
+
 
 </body>
 </html>
