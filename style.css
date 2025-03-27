@@ -236,10 +236,14 @@ footer {
 
 .timeline-content {
     flex: 1;
-    padding-left: 20px; /* Espaçamento uniforme */
-    border-left: 2px solid #8A9C85; /* Cor verde clara da paleta */
-    height: 40px; /* Mantém o mesmo tamanho para todas as barras */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinha verticalmente */
+    padding-left: 20px;
+    border-left: 2px solid #8A9C85;
+    height: 40px;
 }
+
 
 .timeline-content h3 {
     font-size: 18px;
