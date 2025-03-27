@@ -122,6 +122,25 @@ section:not(.no-divider):not(:last-of-type) {
     text-align: center;
 }
 
+.lista-casamento-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.lista-card {
+    background-color: #6f8263; /* Verde do cabeçalho */
+    color: white;
+    padding: 16px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    min-width: 220px;
+    text-align: center;
+}
+
 footer {
     margin-top: 20px;
     padding: 10px;
