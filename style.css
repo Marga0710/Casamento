@@ -94,15 +94,16 @@ p#countdown {
 /* Ajuste para melhorar fluidez das secções */
 section {
     width: 90%;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 60px auto;
     padding: 20px;
 }
 
 /* Adicionar apenas uma linha sutil entre secções */
-section:not(:last-child) {
+section:not(:last-of-type) {
     border-bottom: 1px solid #d1d1d1;
     padding-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .evento-container {
