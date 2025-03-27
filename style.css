@@ -131,7 +131,7 @@ section:not(.no-divider):not(:last-of-type) {
 }
 
 .lista-card {
-    background-color: #6f8263; /* Verde do cabeçalho */
+    background-color: #8A9C85; /* Verde mais claro */
     color: white;
     padding: 16px 20px;
     border-radius: 10px;
