@@ -198,9 +198,13 @@ footer {
 /* Estilo para a secção do cronograma */ 
 .cronograma {
     width: 90%;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 60px auto;
     text-align: left;
+}
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .cronograma h2 {
