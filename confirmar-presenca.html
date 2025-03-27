@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Confirmar Presença</title>
+  <style>
+    body {
+      font-family: 'Josefin Sans', sans-serif;
+      background-color: #f5f5f2;
+      color: #2d3e50;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 36px;
+      color: #6f8263;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      font-size: 16px;
+      width: 80%;
+      max-width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+
+    button {
+      background-color: #6f8263;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-weight: bold;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #5a7052;
+    }
+
+    .resultado {
+      margin-top: 30px;
+    }
+
+    .card-pessoa {
+      background-color: #6f8263;
+      color: white;
+      margin: 10px auto;
+      padding: 15px;
+      border-radius: 8px;
+      width: 90%;
+      max-width: 400px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Confirma a tua Presença</h1>
+  <p>Escreve o teu nome para encontrares o teu grupo</p>
+
+  <input type="text" id="search" placeholder="Ex: Margarida Dias" />
+  <button onclick="pesquisarConvidado()">Pesquisar</button>
+
+  <div class="resultado" id="resultado"></div>
+
+  <script>
+    async function pesquisarConvidado() {
+      const nome = document.getElementById('search').value;
+      const resposta = await fetch('https://script.google.com/macros/s/AKfycbwYybZCwUI-dBdK0NEajgGaozVk_UaP_IWE4UdbouLN0Inm0pUacpUtvR_PEo_-wSYa/exec?nome=' + encodeURIComponent(nome));
+      const dados = await resposta.json();
+
+      const resultadoDiv = document.getElementById('resultado');
+      resultadoDiv.innerHTML = '';
+
+      if (!dados || dados.length === 0) {
+        resultadoDiv.innerHTML = '<p>Nenhum convidado encontrado com esse nome.</p>';
+        return;
+      }
+
+      dados.forEach(pessoa => {
+        const div = document.createElement('div');
+        div.className = 'card-pessoa';
+        div.innerHTML = `
+          <p><strong>${pessoa.Nome}</strong></p>
+          <button onclick="confirmarPresenca('${pessoa.Nome}')">Confirmar Presença</button>
+        `;
+        resultadoDiv.appendChild(div);
+      });
+    }
+
+    async function confirmarPresenca(nome) {
+      await fetch('https://script.google.com/macros/s/AKfycbwYybZCwUI-dBdK0NEajgGaozVk_UaP_IWE4UdbouLN0Inm0pUacpUtvR_PEo_-wSYa/exec', {
+        method: 'POST',
+        body: JSON.stringify({ nome: nome, presenca: 'Sim' }),
+        headers: { 'Content-Type': 'application/json' }
+      });
+
+      alert(`Presença confirmada para ${nome}!`);
+    }
+  </script>
+</body>
+</html>
